@@ -1,0 +1,18 @@
+/* Simple Reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* For rem size */
+html {
+  font-size: 62.5%;
+}
+
+/* For width to not include padding and margin */
+body {
+  box-sizing: border-box;
+}

@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@mui/material";
+import { Outlet } from "react-router-dom";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ErrorPage from "./views/ErrorPage/ErrorPage";
+import HomePage from "./views/HomePage/HomePage";
+import ArticlePage from "./views/ArticlePage/ArticlePage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "articles/:articleId",
+    element: <ArticlePage />,
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <RouterProvider router={router} />
+      <Outlet />
+    </Box>
   );
 }
 

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.pageMargin {
+  margin: 2em 4em;
+}
+
+.headerResults {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  color: #363636;
+
+  margin-bottom: 0.5em;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

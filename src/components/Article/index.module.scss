@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30%;
+  margin: 1em;
+
+  background: #ffffff;
+  outline: 1px solid #eaeaea;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+
+  .cardMedia {
+    height: 10em;
+  }
+  .cardContent {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 2rem;
+
+    .dateContent {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+
+      color: #363636;
+      opacity: 0.6;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+
+    .title {
+      min-height: 5em;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 2.9rem;
+
+      color: #363636;
+    }
+
+    .descBox {
+      display: flex;
+      flex: 1 0 auto;
+      flex-wrap: wrap;
+      align-items: start;
+      .desc {
+        text-overflow: ellipsis;
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+
+        color: #363636;
+      }
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+
+      color: #363636;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}

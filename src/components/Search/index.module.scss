@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.inputBox {
+  .formBox {
+    width: 50%;
+    .inputLabel {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2rem;
+
+      color: #363636;
+    }
+
+    .input {
+      margin-top: 1em;
+      padding: 0.2em 1em;
+
+      background: #ffffff;
+      border: 1px solid #eaeaea;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 0.5em;
+
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+
+      color: #575757;
+    }
+
+    @media screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+}
