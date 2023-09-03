@@ -8,12 +8,12 @@ import ArticlePage from "./views/ArticlePage/ArticlePage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "space-news-search/",
     element: <HomePage />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "articles/:articleId",
+    path: "space-news-search/articles/:articleId",
     element: <ArticlePage />,
   },
 ]);
